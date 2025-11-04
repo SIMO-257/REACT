@@ -1,0 +1,10 @@
+
+{ "posts_data" : [
+        {"profil":"../Images/pro1.jpg","nom":"Taha Harnoun","date":"12-09-2025","description":"Amazing!","image":"../Images/beach.jpg","likes":100,"comms":"3"},
+        {"profil":"../Images/pro3.jpg","nom":"Ayman Lhrach","date":"20-08-2021","description":"","image":"../Images/pro5.jpg","likes":10,"comms":"5"},
+        {"profil":"../Images/pro4.jpg","nom":"Anwar Ouata","date":"04-12-2023","description":"Magnifique!!!","image":"../Images/pro4.jpg","likes":20,"comms":"1"},
+        {"profil":"../Images/pro2.jpg","nom":"Azdine Ahbazan","date":"07-01-2024","description":"hhhhhhhhhh","image":"../Images/pro2.jpg","likes":12,"comms":"2"},
+        {"profil":"../Images/pro5.jpg","nom":"Boukchouch Adam","date":"10-01-2022","description":"Quand on doit commencer le back-end?","image":"","likes":15,"comms":"20"}
+
+    ]
+}

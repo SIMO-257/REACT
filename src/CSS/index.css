@@ -1,0 +1,48 @@
+.card {
+    display: inline-block;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgb(131, 127, 127);
+    padding: 15px;
+    margin: 5px;
+    border: 1px black solid;
+}
+h4 {
+    margin: 5px;
+
+}
+img {
+    height: 7em;
+    width: 14em;
+    border-radius: 7px;
+}
+.my_btn {
+  background-color: rgb(36, 109, 193);
+  color: white;
+  font-size: 20px;
+  border:none;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  
+}
+.Intro {
+    border: 3px rgb(101, 101, 101) dashed;
+    padding: 10px;
+    display: inline-block;
+    margin: 2px;
+    
+}
+fieldset {
+    width: 1em;
+}
+section {
+    width: 340px;
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+.Profil {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+}
