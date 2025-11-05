@@ -1,5 +1,5 @@
-import Post from "./Post";
-import Data from "./Posts_Data.json";
+import Post from "../Post";
+import Data from "../Posts_Data.json";
 
 export default function Posts(){
     
