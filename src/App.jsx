@@ -2,9 +2,9 @@ import { useState } from 'react';
 
 import Form_Stagiares from './CRUD/Form_Stagiaire';
 import Desplay_Stagiares from './CRUD/Desplay_Stagiaires';
-import { Filtrer_Stagiaire } from './CRUD/Recherche_Stagiaire';
+import Filtrer_Stagiaire from './CRUD/Recherche_Stagiaire';
 
-function App1() {
+function App() {
 
     const [List_Stagiaires,setList_Stage] = useState([
         {Id:1,Nom : "Mohammed", Prenom : "Mammah", Adresse : "Casablnca Salmia2",Ville : "Casablanca"},
@@ -59,7 +59,7 @@ return (
     
     <Form_Stagiares Affichage={Affichage} Ajouter={Ajouter} Modifier={Modifier}  Stagiaire={Stagiaire}   />  
     <Desplay_Stagiares List_Stagiaires={List_Stagiaires} Supprimer={Supprimer} Editer={Editer}  />
-    <Recherche_Stagiaire List={List_Stagiaires}/>
+    <Filtrer_Stagiaire List={List_Stagiaires}/>
         
  
         
@@ -67,7 +67,7 @@ return (
 )
 }
 
-export default App1
+export default App
 
 {
     //<Desplay_Stagiares List_Stagiaires={List_Stagiaires} Supprimer={Supprimer} Editer={Editer}  />

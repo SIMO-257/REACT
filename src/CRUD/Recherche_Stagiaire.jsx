@@ -1,8 +1,9 @@
 import { useState,useEffect } from "react"
-export function Filtrer_Stagiaire(props){
+
+export default function Filtrer_Stagiaire(props){
 
     const [nom,setNom] = useState();
-    const [adresse,setAddresse] = useState();
+    const [adresse,setAdjresse] = useState();
 
     const [List_Recherche,setList] = useState([]);
 
