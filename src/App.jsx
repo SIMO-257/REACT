@@ -59,6 +59,7 @@ return (
     
     <Form_Stagiares Affichage={Affichage} Ajouter={Ajouter} Modifier={Modifier}  Stagiaire={Stagiaire}   />  
     <Desplay_Stagiares List_Stagiaires={List_Stagiaires} Supprimer={Supprimer} Editer={Editer}  />
+    <Recherche_Stagiaire List={List_Stagiaires}/>
         
  
         

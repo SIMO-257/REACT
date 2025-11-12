@@ -2,24 +2,21 @@ import { useState,useEffect } from "react"
 export function Filtrer_Stagiaire(props){
 
     const [nom,setNom] = useState();
-    const [ville,setVille] = useState();
+    const [adresse,setAddresse] = useState();
 
     const [List_Recherche,setList] = useState([]);
 
     useEffect(()=>{
 
         console.log(nom)
-        setList(props.List.filter(S => S.Nom == nom));
- 
-    },[nom]);
+        setList(props.List.filter(S => S.Nom == nom || S.includes == adresse ));
+    },[nom,adresse]);
     
     const Cherche = (e) =>{
 
-        setNom(()=> e.target.value);
+    setNom(()=> e.target.value);
 
-    /*     setVille(e.target.value);
-        setList(props.List.filter(S => S.Ville == ville)); */
-        
+    setAdresse(()=>e.target.value);
 
     }
 
