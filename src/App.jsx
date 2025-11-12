@@ -8,8 +8,8 @@ function App() {
 
     const [List_Stagiaires,setList_Stage] = useState([
         {Id:1,Nom : "Mohammed", Prenom : "Mammah", Adresse : "Casablnca Salmia2",Ville : "Casablanca"},
-        {Id:2,Nom : "Yassine", Prenom : "Elmiri", Adresse : "Casablnca Salmia2",Ville : "Tanger"},
-        {Id:3,Nom : "Taha", Prenom : "Harnoun", Adresse : "Casablnca Salmia2",Ville : "Casablanca"}
+        {Id:2,Nom : "Yassine", Prenom : "Elmiri", Adresse : "Casablnca Nassr",Ville : "Tanger"},
+        {Id:3,Nom : "Taha", Prenom : "Harnoun", Adresse : "Casablnca Sbata",Ville : "Casablanca"}
     ]);
     const [Affichage,setAffichage] = useState(true);
 

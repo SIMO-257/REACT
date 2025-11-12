@@ -2,29 +2,25 @@ import { useState,useEffect } from "react"
 
 export default function Filtrer_Stagiaire(props){
 
-    const [nom,setNom] = useState();
-    const [adresse,setAdjresse] = useState();
-
+    const [cherche,setCherche] = useState("");
     const [List_Recherche,setList] = useState([]);
 
     useEffect(()=>{
 
-        console.log(nom)
-        setList(props.List.filter(S => S.Nom == nom || S.includes == adresse ));
-    },[nom,adresse]);
+        setList(props.List.filter(S => S.Nom == cherche || S.Adresse.includes(cherche) ));
+        
+    },[cherche]);
     
     const Cherche = (e) =>{
 
-    setNom(()=> e.target.value);
-
-    setAdresse(()=>e.target.value);
+    setCherche(()=> e.target.value);
 
     }
 
     return(
         <>
         <br />
-            <input type="text" placeholder="Nom?" value={nom} onChange={Cherche} />
+            <input type="text" placeholder="Nom?" value={cherche} onChange={Cherche} />
             <select>
                 <option value="Casablanca">Casablanca</option>
                 <option value="Tanger">Tanger</option>
