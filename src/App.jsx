@@ -31,8 +31,14 @@ function App() {
     }
 
     const Supprimer = (id) => {
+        if (confirm) {
 
-        setList_Stage(List_Stagiaires.filter(S=>S.Id != id));
+            setList_Stage(List_Stagiaires.filter(S=>S.Id != id));
+            
+        }else {
+
+        }
+       
         
     }
 
