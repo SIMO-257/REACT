@@ -1,0 +1,11 @@
+section {
+    border:1px black solid ;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+h4 {
+    margin: 5px;
+}
