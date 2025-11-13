@@ -7,12 +7,13 @@ import './CSS/index3.css';
 // import './CSS/index2.css';
 
 
-import App from './App.jsx'
+// import App from './App.jsx'
+import AppExamen from './AppExamen.jsx';
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App/>
+    <AppExamen/>
   </StrictMode>,
 )

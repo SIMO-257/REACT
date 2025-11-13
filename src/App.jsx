@@ -31,10 +31,10 @@ function App() {
     }
 
     const Supprimer = (id) => {
-        if (confirm) {
+        if (window.confirm("Do you confirme deleting this personne ?") ) {
 
             setList_Stage(List_Stagiaires.filter(S=>S.Id != id));
-            
+
         }else {
 
         }
@@ -55,6 +55,7 @@ function App() {
         setAffichage(true);    
 
     }
+    
  
 
 
@@ -65,7 +66,7 @@ return (
     
     <Form_Stagiares Affichage={Affichage} Ajouter={Ajouter} Modifier={Modifier}  Stagiaire={Stagiaire}   />  
     <Desplay_Stagiares List_Stagiaires={List_Stagiaires} Supprimer={Supprimer} Editer={Editer}  />
-    <Filtrer_Stagiaire List={List_Stagiaires}/>
+    <Filtrer_Stagiaire List={List_Stagiaires} />
         
  
         

@@ -7,7 +7,7 @@ export default function Filtrer_Stagiaire(props){
 
     useEffect(()=>{
 
-        setList(props.List.filter(S => S.Nom == cherche || S.Adresse.includes(cherche) ));
+        setList(props.List.filter(S => S.Nom == cherche || S.Adresse.includes(cherche) || S.Ville == cherch));
         
     },[cherche]);
     
@@ -21,7 +21,7 @@ export default function Filtrer_Stagiaire(props){
         <>
         <br />
             <input type="text" placeholder="Nom?" value={cherche} onChange={Cherche} />
-            <select>
+            <select onChange={Cherche} >
                 <option value="Casablanca">Casablanca</option>
                 <option value="Tanger">Tanger</option>
                 <option value="Rabat">Rabat</option>
