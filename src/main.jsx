@@ -11,12 +11,13 @@ import './CSS/Controle.css';
 
 
 // import App from './App.jsx'
-import AppExamen from './AppExamen.jsx';
+import APP_API from './APP_API.jsx';
+// import AppExamen from './AppExamen.jsx';
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <AppExamen/>
+    <APP_API/>
   </StrictMode>,
 )

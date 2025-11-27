@@ -25,7 +25,7 @@ export default function SortControl(props){
         
     return(
          
-        <>
+        
             <fieldset>     
                 <legend>SortControl</legend>   
             <select onChange={(e)=>setSort(e.target.value)}>
@@ -59,6 +59,6 @@ export default function SortControl(props){
             }
             </ul>
             </fieldset>
-        </>
+        
     )
 }

@@ -16,7 +16,7 @@ function AppExamen(){
             name: "",
             date: "",
             capacity: 0,
-            ticketSold: 1,
+            ticketsSold: 1,
             price: 0,
             category: ""
         }
