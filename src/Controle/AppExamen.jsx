@@ -1,10 +1,10 @@
 import { useState , useEffect } from "react"
-import EventForm from "./Controle/EventForm"
-import EventList from "./Controle/EventList"
-import TicketManager from "./Controle/TicketManager";
-import StatsCalculator from "./Controle/StatsCalculator";
-import FilterPanel from "./Controle/FilterPanel";
-import SortControl from "./Controle/SortControl";
+import EventForm from "./EventForm"
+import EventList from "./EventList"
+import TicketManager from "./TicketManager";
+import StatsCalculator from "./StatsCalculator";
+import FilterPanel from "./FilterPanel";
+import SortControl from "./SortControl";
 
 function AppExamen(){
 

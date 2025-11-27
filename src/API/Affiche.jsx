@@ -1,4 +1,4 @@
-export function Affiche(props){
+export default function Affiche(props){
     return(
         <>
             <table border={1}>
@@ -17,6 +17,7 @@ export function Affiche(props){
                             <td>{post.author}</td>
                             <td>
                                 <button onClick={()=> props.supprimer(post.id)}>Delete</button>
+                                <button onClick={()=> props.editer(post)}>Editer</button>
                             </td>
                         </tr>
                     )

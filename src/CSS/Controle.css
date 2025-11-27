@@ -9,3 +9,6 @@ section {
 h4 {
     margin: 5px;
 }
+fieldset{
+    width: 10em;
+}
