@@ -22,18 +22,13 @@
     },
     {
       "id": "5",
-      "title": "hhhhhhh",
+      "title": "kkkkkkkk",
       "author": "gggggggggg"
     },
     {
       "id": "8",
-      "title": "uuuuuuuu",
-      "author": "www"
-    },
-    {
-      "id": "9",
-      "title": "fffff",
-      "author": "6666"
+      "title": "aaaaa",
+      "author": "bbbbbbbb"
     }
   ],
   "comments": [
@@ -41,6 +36,44 @@
       "id": "1",
       "body": "some comment",
       "postId": 1
+    }
+  ],
+  "tickets": [
+    {
+      "id": "1",
+      "title": "Maroc vs Argentine",
+      "ticketDay": "2030-02-15",
+      "price": 200
+    },
+    {
+      "id": "2",
+      "title": "Brésil vs Palestine",
+      "ticketDay": "2030-02-18",
+      "price": 150
+    },
+    {
+      "id": "3",
+      "title": "maroc vs spain",
+      "ticketDay": "2025-12-18",
+      "price": "1000"
+    },
+    {
+      "id": "5",
+      "title": "maroc vs uae",
+      "ticketDay": "2026-01-01",
+      "price": "120"
+    },
+    {
+      "id": "6",
+      "title": "algeria vs uae",
+      "ticketDay": "2025-12-28",
+      "price": "1000"
+    },
+    {
+      "id": "6",
+      "title": "maroc vs algeria",
+      "ticketDay": "2026-01-10",
+      "price": "300"
     }
   ],
   "profile": {

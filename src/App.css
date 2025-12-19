@@ -1,0 +1,19 @@
+li {
+    border: solid 1px black;
+    padding: 10px;
+    margin: 5px;
+    background-color: blueviolet;
+    color: white;
+    width: 50%;
+
+}
+
+a {
+    color: rgb(10, 10, 179);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: rgb(7, 7, 174);
+}

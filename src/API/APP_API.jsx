@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useState } from "react";
-import  Affiche  from "./API/Affiche";
-import  FormPost from "./API/FormPost";
+import  Affiche  from "./Affiche";
+import  FormPost from "./FormPost";
 import axios from "axios";
 export default function APP_API(){
 

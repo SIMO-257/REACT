@@ -1,109 +1,53 @@
-import React, { Component, useEffect, useState } from "react";
-import  Affiche  from "./API/Affiche";
-import  FormPost from "./API/FormPost";
+import { useEffect, useState } from "react";
+import './App.css';
 import axios from "axios";
+import TicketList from "./Controle 2/TicketList";
+import AddTicktForm from "./Controle 2/AddTicketForm";
+
 export default function APP_API(){
 
-const [listeposts,setListeposts]=useState([{}])
+const [initialTickets,setListTickets]= useState([
+{ id: 1, title: 'Maroc vs Argentine', ticketDay: '2030-02-15', price: 200 },
+{ id: 2, title: 'Brésil vs Palestine', ticketDay: '2030-02-18', price: 150 },]); 
 
-const [post,setPost]=useState({"id":0,"title":'',"author":''})
-const [affichage,setAffichage] = useState(true);
+
+const [ticket,setTicket]=useState({id:0,title:'',ticketDay:'',price:0})
 
 
-const add=(post)=>{
 
-if(post.id!='' && post.title!='' && post.author!='')
+const add=(ticket)=>{
+
+if(ticket.id!='' && ticket.title!='' && ticket.price!='' && ticket.ticketDay)
 {
 
-  axios.post("http://localhost:3004/posts",post).then((res)=>{
+  axios.post("http://localhost:3004/tickets",ticket).then((res)=>{
    
-   if(res.status==201)
-   {
+   if(res.status==201){
 
-    alert("bien ajouter")
-    setListeposts([...listeposts,post])
-    document.forms[0].reset()
+    alert("bien ajouter");
+    setListTickets([...initialTickets,ticket]);
 
     
-   }
-   else
-   {
+   }else {
 
     alert("Erreur du BackEnd")
 
    }
 })
-}
-else
-{
-
-  alert('Erreur tout les champs sont obligatoires')
-
-}
-
-}
-
-const editer=(post)=>{
-
-    setPost(post)
-    setAffichage(false)
-
-}
-
-const modifier = (newPost) => {
-
-    axios.put("http://localhost:3004/posts/"+newPost.id,newPost).then((res)=>{
-
-    if(res.status==200){
-
-       
-        setListeposts(listeposts.map(P=> P.id == newPost.id ? newPost : P ));
-        document.forms[0].reset()
-
-
-    }else {
-
-        alert("Erreur :tout les champs sont obligatoires")
-
-    }})
-
-    setAffichage(true)
-
-    
-}
-
-
-const supprimer=(id)=>{
-      
-        axios.delete("http://localhost:3004/posts/"+id).then((res)=>{
-            if(res.status==200)
-            {
-         
-                const listReste=listeposts.filter(item=>(item.id!=id))
-                setListeposts(listReste)
-
-               
-            }
-            else
-            {
-                setErrorsupprimer("<span style='color:red'>Erreur de suppression</span>");
-            }
-
-        })
-    }
+}}
 
 useEffect(()=>{
 
-axios.get("http://localhost:3004/posts").then((res)=>{
+axios.get("http://localhost:3004/tickets").then((res)=>{
   
-    setListeposts(res.data)
+   setListTickets(res.data)
 
-})},[listeposts]);
+})},[initialTickets]);
 
 return(
     <>
-      <Affiche listeposts={listeposts} supprimer={supprimer} editer={editer}/>
-      <FormPost add={add} modifier={modifier} affichage={affichage} post={post} />  
+    <TicketList initialTickets={initialTickets} />
+    <AddTicktForm add={add}/>
     </>
 )    
 }
