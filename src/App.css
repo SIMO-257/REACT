@@ -8,12 +8,17 @@ li {
 
 }
 
-a {
-    color: rgb(10, 10, 179);
-}
 
-button {
-    background-color: transparent;
-    border: none;
-    color: rgb(7, 7, 174);
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(224, 38, 38);
+    align-items: center;
+    height: 50px;
+}
+a  {
+    color: green;
+    font-size: x-large;
+    text-decoration: none;
+    
 }

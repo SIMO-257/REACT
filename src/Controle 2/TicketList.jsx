@@ -1,28 +1,26 @@
-import { useState } from "react";
-import TicktDetails from "./TicketDetails"
+import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 export default function TicketList(props){
 
-let [affichage,setAffichage] = useState(true);
+const navigate = useNavigate();
 
 const ticketList = useSelector((state)=>state.tickets)
 
 
-const afficherdetails = (ticket)=>{
+const afficherdetails = (ticketid)=>{
 
-  setAffichage(false);
-  setT(ticket)
+    navigate(`/TicketList/${ticketid}`);
   
 
 }
     return(
         <>
             <ul>
-                {ticketList.map((ticket)=>{
+                {props.initialTickets.map((ticket)=>{
                     return (
                         <li> 
                 
-                            <div><b>"{ticket.title}"</b>  {ticket.ticketDay} , {ticket.price}<button onClick={()=>afficherdetails(ticket)}>Voir les detailles</button> </div> 
+                            <div><b>"{ticket.title}"</b>  {ticket.ticketDay} , {ticket.price}<a onClick={()=>afficherdetails(ticket.id)}>Voir les detailles</a> </div> 
                             
                         </li>
                     )

@@ -46,12 +46,6 @@
       "price": 200
     },
     {
-      "id": "2",
-      "title": "Brésil vs Palestine",
-      "ticketDay": "2030-02-18",
-      "price": 150
-    },
-    {
       "id": "3",
       "title": "maroc vs spain",
       "ticketDay": "2025-12-18",
@@ -65,12 +59,6 @@
     },
     {
       "id": "6",
-      "title": "algeria vs uae",
-      "ticketDay": "2025-12-28",
-      "price": "1000"
-    },
-    {
-      "id": "6",
       "title": "maroc vs algeria",
       "ticketDay": "2026-01-10",
       "price": "300"
@@ -81,11 +69,12 @@
       "ticketDay": "2025-12-04",
       "price": "865"
     },
+
     {
-      "id": "6",
-      "title": "mmmmmm",
-      "ticketDay": "2025-12-17",
-      "price": "09"
+      "id": "29",
+      "title": "TTTT",
+      "ticketDay": "2025-12-11",
+      "price": "45"
     }
   ],
   "profile": {
