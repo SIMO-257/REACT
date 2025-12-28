@@ -1,17 +1,15 @@
 import { useParams } from "react-router-dom"
-export default function TicktDetails(props){
+export default function TicktDetails(){
 
-let {id} = useParams();
-let L = props.initialTickets
-const T = L.find((t) => t.id == Number(id) )
+let {id,title,day,price} = useParams();
 
 return(
 <>
 <div>
-    <li>{T.id}</li>
-    <li>{T.ticketDay}</li>
-    <li>{T.title}</li>
-    <li>{T.price}</li>    
+    <li>{id}</li>
+    <li>{day}</li>
+    <li>{title}</li>
+    <li>{price}</li>    
 </div>
 </>
 )

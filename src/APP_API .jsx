@@ -4,8 +4,10 @@ import axios from "axios";
 import TicketList from "./Controle 2/TicketList";
 import AddTicktForm from "./Controle 2/AddTicketForm";
 import TicktDetails from "./Controle 2/TicketDetails";
+import Nav from "./Nav";
 import Home from "./Home";
-import { Route,Routes,BrowserRouter,Link } from "react-router-dom";
+import { Route,Routes,BrowserRouter} from "react-router-dom";
+
 
 export default function APP_API(){
 
@@ -54,14 +56,11 @@ axios.get("http://localhost:3004/tickets").then((res)=>{
 return(
    <>
       <BrowserRouter>
-      <nav>
-         <Link to="/TicketList">List des tickets</Link>
-         <Link to="/AddTicket">Ajouter un ticket</Link>
-         <Link to="/">Home</Link>
-      </nav>
+      <Nav/>
       <Routes>
-         <Route path="/TicketList/:id" element={<TicktDetails initialTickets={initialTickets}/>} />
-         <Route path="/TicketList" element={<TicketList initialTickets={initialTickets} />} />
+         <Route path="/TicketList" element={<TicketList initialTickets={initialTickets} />}>
+            <Route path=":id/:title/:day/:price" element={<TicktDetails />} />
+         </Route>
          <Route path="/AddTicket" element={<AddTicktForm add={add} />} />
          <Route path="/" element={<Home/>} />
       </Routes>
