@@ -12,13 +12,14 @@ import './CSS/Controle.css';
 
 
 // import App from './App.jsx'
-import APP_API from './APP_API ';
+// mport APP_API from './APP_API ';
+import App2 from './App2';
 // import AppExamen from './AppExamen.jsx';
 
 
 
 createRoot(document.getElementById('root')).render(
   <Provider store={store}>
-    <APP_API/>
+    <App2/>
   </Provider>,
 )

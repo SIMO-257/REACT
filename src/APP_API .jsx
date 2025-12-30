@@ -4,8 +4,8 @@ import axios from "axios";
 import TicketList from "./Controle 2/TicketList";
 import AddTicktForm from "./Controle 2/AddTicketForm";
 import TicktDetails from "./Controle 2/TicketDetails";
-import Nav from "./Nav";
-import Home from "./Home";
+import Nav from "./Controle 2/Nav";
+import Home from "./Controle 2/Home";
 import { Route,Routes,BrowserRouter} from "react-router-dom";
 
 
